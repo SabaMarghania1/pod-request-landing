@@ -1,1 +1,141 @@
+:root {
+  --light-green: #54e6af;
+  --dark-blue: #2c344b;
+  --very-dark-blue: #121725;
+  --light-blue: #5a668a;
+  --very-light-blue: #c2cbe5;
+}
 
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: var(--very-dark-blue);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--light-green);
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #fff;
+  font-size: inherit;
+}
+
+p {
+  font-weight: 300;
+  color: var(--very-light-blue);
+}
+
+img {
+  display: block;
+}
+
+form {
+  padding-bottom: 40px;
+}
+
+input {
+  max-width: 600px;
+  width: 90%;
+  padding: 12px 16px;
+  margin-top: 1em;
+  background-color: var(--dark-blue);
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: var(--light-green);
+  color: black;
+  box-shadow: 0px 25px 20px -20px hsla(hsla(157, 74%, 61%, 1));
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(#b3ffe2);
+}
+
+input:placeholder-shown {
+  opacity: 0.5;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container {
+  img {
+    width: 20%;
+  }
+}
+
+.error {
+  margin: 0;
+  color: #fb3e3e;
+  font-size: 12px;
+  text-align: start;
+  margin-left: 20px;
+  display: none;
+}
+
+@media (min-width: 375px) {
+  body {
+    padding: 50px 15px;
+  }
+  body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(/assets/mobile/image-host.jpg);
+    opacity: 0.1;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    margin: 26px 0;
+  }
+
+  p {
+    line-height: 26px;
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    margin: 52px 0;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+}
