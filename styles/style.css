@@ -200,4 +200,29 @@ input:placeholder-shown {
 }
 
 @media (min-width: 1440px) {
+  body {
+    padding: 130px 160px;
+    overflow-x: hidden;
+  }
+  body::before {
+    top: 130px;
+    left: 40%;
+    right: -20%;
+    background-image: url(/assets/desktop/image-host.jpg);
+  }
+
+  body::after {
+    position: absolute;
+    right: 0;
+    top: 80%;
+  }
+
+  .main {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 62px;
+  }
 }
