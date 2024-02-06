@@ -79,7 +79,6 @@ input:placeholder-shown {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .container {
@@ -134,7 +133,70 @@ input:placeholder-shown {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
+  body {
+    padding: 50px 30px;
+  }
+  body::before {
+    top: 0;
+    left: 40%;
+    right: 0;
+    opacity: 1;
+    background-image: url(/assets/tablet/image-host.jpg);
+  }
+
+  body::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 100px;
+    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+  }
+
+  .logo {
+    width: 20%;
+    margin-left: 0;
+  }
+
+  .main {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0px 50px;
+    margin-right: 50px;
+    padding: 50px 20px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  p {
+    width: 75%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  form {
+    position: relative;
+    width: 75%;
+  }
+
+  input[type="submit"] {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    width: 40%;
+  }
+
+  .container {
+    order: 3;
+    width: 75%;
+  }
 }
 
 @media (min-width: 1440px) {
