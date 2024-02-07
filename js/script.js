@@ -15,7 +15,7 @@ function errorMessage(event) {
   const isValid = validateEmail(emailInput);
 
   if (!isValid) {
-    error.textContent = "Please enter a valid email address.";
+    error.textContent = "Oops check email";
     error.style.display = "block";
   } else {
     error.textContent = "";

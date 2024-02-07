@@ -96,7 +96,7 @@ input:placeholder-shown {
   display: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 370px) {
   body {
     padding: 50px 15px;
   }
@@ -106,7 +106,7 @@ input:placeholder-shown {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(/assets/mobile/image-host.jpg);
+    background-image: url(`/assets/mobile/image-host.jpg);
     opacity: 0.1;
   }
 
